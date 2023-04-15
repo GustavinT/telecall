@@ -1,0 +1,48 @@
+@font-face {
+    font-family: roboto;
+    src: url(/fontes/Roboto-Regular.ttf);
+}
+
+html{
+    font-family: roboto;
+}
+
+
+.box_header{
+    background-color: #CA1C2A;
+    color: aliceblue;
+    padding: 150px;
+    box-shadow: 2px 2px 2px 2px black;
+
+
+}
+nav{
+    background-color: rgb(56, 68, 68);
+    display: flex;
+    margin-top: -150px;
+    margin-left: -150px;
+    margin-right: -150px;
+    height: 40px;
+}
+nav h1, a, button{
+    color: aliceblue;
+    margin-top: 13px;
+    margin-right: 120px;
+    font-size: 1.3em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#img_logo{
+    margin-left: 10px;
+}
+#nav_1{
+    margin: auto;
+    color: aliceblue;
+    list-style: none;
+}
+
+
+
+
+
+
