@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+#titulo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color: #667100;
+    position: relative;
+
+
+}
+#subtitulo{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    color:#003B71;
+    margin-right: 10%;
+    font-size: 19px;
+    
+}
+fieldset{
+    border: 0;
+}
+section{
+    background-color: rgb(250, 250, 250);
+    width: 500px;
+    height: auto;
+    margin: auto auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 50px;
+    box-shadow: black 2px 2px 7px 2px;
+    border-radius: 20px;
+}
+body{
+    background-color: #CA1C2A;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+textarea{
+    border-radius: 5px;
+    padding: 10px;
+    margin: 2px;
+    width: 500px;
+    height: 200px;
+    font-size: 1.5em;
+}
+input, select{
+    border-radius: 5px;
+    padding: 2px;
+    margin: 2px;
+    width: 500px;
+    
+}
+.campo{
+    margin-bottom: 1em;
+    
+}
+.campo label{
+    margin: bottom 5.2em;
+    color: #003B71;
+    display: block;
+}
+fieldset .grupo .campo{
+    float: left;
+    margin-right: 1em;
+}
+.campo input [type="text"], campo input [type="email"], campo select, campo textarea{
+    padding: 0.2em;
+    border: 1px solid #59429d;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2,);
+    display: block;
+
+
+}
+.campo select option{
+    padding-right: 1em;
+}
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    background-color: #E0E0F8;
+}
+.botao{
+    font-size: 1.2em;
+    background-color: #a8101c;
+    border: 0;
+    margin: bottom 1em; 
+    color:white;
+    padding: 0.2em 06em;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5)  ;
+    position:static ;
+    top: 90%;
+    left: 50%;
+    margin-right: -50%;
+    margin-bottom: 5%;
+    transform:translate(-50 -50);
+    
+}
+#botao:hover{
+    background-color:  #003B71;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+
+}
+#check{
+    display: inline-block;
+}
+img{
+    margin: auto 120px;
+}
+
+.box_header{
+    background-color: #CA1C2A;
+    color: aliceblue;
+    box-shadow: 2px 2px 2px 2px black;
+
+
+}
+nav{
+    background-color: rgb(56, 68, 68);
+    display: flex;
+    height: 40px;
+}
+nav h1, a, button{
+    color: aliceblue;
+    margin-top: 13px;
+    margin-right: 120px;
+    font-size: 1.3em;
+    text-decoration: none;
+    white-space: nowrap;
+}
+#img_logo{
+    margin-left: 10px;
+    margin-right: 2px;
+    width: 30px;
+    height: 30px;
+    padding-right: 0%;
+}
+#nav_1{
+    margin: auto;
+    color: aliceblue;
+    list-style: none;
+}
+#marca{
+    margin-right: 200px;
+    padding-left: 0%;
+    color: #E0E0F8;
+}
+#botao{
+    width: 500px;
+    background-color: #a8101c;
+    margin-left: 200px;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 20px;
+    
+}
