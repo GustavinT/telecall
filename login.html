@@ -14,7 +14,11 @@
         <h3>Entrar com seu cadastro<br>Só para clientes</h3>
         <img src="/imagens/android-chrome-192x192-removebg-preview.png" alt="">
         <input type="text" name="email" placeholder="Seu email..." id="login">
+        <div class="error" name="errorEmail">Email incorreto</div>
+        <div class="error" id="ErrorRecorder">Favor preencher o campo obrigatório</div>
         <input type="password" name="senha" placeholder="Sua senha..." id="senha">
+        <div class="error" id="Errorsenha" >Senha incorreta</div>
+        <div class="error">Favor preencher o campo obrigatório</div>
         <input type="submit" onclick="logar(); return false">
         <a href="cadastro.html">Cadastre-se</a>
     </form>

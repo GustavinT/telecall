@@ -39,7 +39,7 @@
     </fieldset>
     <div>
       <label>E-mail:</label>
-      <input type="email" name="email" id="email">
+      <input type="email" name="email" id="email" >
     </div>
     <div>
       <label>Telefone(Com DDD):</label>
@@ -58,18 +58,10 @@
       <input type="text" name="CPF" id="CPF">
     </div><br>
 
-    <div>
-      <label>Sexo:</label><br>
-      <label>
-        <input type="radio" name="Devweb" value="frontend" checked="">Masculino
-      </label>
-      <label>
-        <input type="radio" name="devweb" value="beckend">Feminino
-      </label>
-      <label>
-        <input type="radio" name="devweb" value="Fullstack">Prefiro não informar
-      </label>
-    </div><br>
+  Sexo:<br><br>
+        <input id="selec"  type="radio" name="Devweb" value="frontend" checked="">Masculino</input>
+        <br><br></label><input id="selec" type="radio" name="devweb" value="beckend">Feminino</input>
+        <br><br><input id="selec" type="radio" name="devweb" value="Fullstack">Prefiro não informar</input>
 
     <div class="campo">
       <label>Deseja receber nossas novidades?</label>
@@ -100,8 +92,8 @@
       <label>Conte um pouco o que espera de nossos serviços:</label>
       <textarea row="6" id="experiencia" name="experiencia"></textarea>
     </div><br><br>
-    <a id="botao" href="index.html">Concluído</a>
-
+    <input type="submit" onclick="cadastrar(); return false">
+    <a href="cadastro.html">Cadastre-se</a>
   </form>
 
 

@@ -1,4 +1,12 @@
 
+@font-face {
+    font-family: roboto;
+    src: url(/fontes/Roboto-Regular.ttf);
+}
+
+html{
+    font-family: roboto;
+}
 *{
     box-sizing: border-box;
 }
@@ -32,4 +40,12 @@ a{
     text-decoration: none;
     color: black;
     font-size: larger;
+}
+.error{
+    color: aliceblue;
+    background-color: #CA1C2A;
+    display: none;
+    border-radius: 30px;
+    padding: 3px;
+    font-size: 0.8em;
 }
