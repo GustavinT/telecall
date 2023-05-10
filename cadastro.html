@@ -3,15 +3,16 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Telecall</title>
   <link rel="stylesheet" href="reset.css">
   <link href="cadastro.css" rel="stylesheet" type="text/css">
+  <script src="cadastro.js"></script>
 </head>
 
 <body>
   <header class="box_header">
     <nav>
-        <img id="img_logo" src="/imagens/android-chrome-192x192-removebg-preview.png" alt="">
+        <img id="img_logo" src="imagens/android-chrome-192x192-removebg-preview.png" alt="">
         <h1 id="marca">Telecall</h1>
         <a href="http://" target="_blank" rel="noopener noreferrer">Contato</a>
         <a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
@@ -22,14 +23,14 @@
   <section>
   <div>
     <h1 id="titulo"></h1>
-    <img src="./cadastro_files/download-removebg-preview.png" alt="Logo Telecall">
+    <img src="cadastro_files/download-removebg-preview.png" alt="Logo Telecall">
     <p id="subtitulo">Complete suas informações:</p>
     <br>
   </div>
   <form>
     <fieldset>
       <div>
-        <label for="">nome:</label>
+        <label for="">Nome:</label>
         <input type="text" name="nome" id="nome">
       </div>
       <div>
@@ -39,7 +40,12 @@
     </fieldset>
     <div>
       <label>E-mail:</label>
-      <input type="email" name="email" id="email">
+      <input
+      type="text"
+      name="tarefa"
+      placeholder="Insira seu Email"
+      id="tarefa"
+    />
     </div>
     <div>
       <label>Telefone(Com DDD):</label>
@@ -57,53 +63,15 @@
       <label>CPF:</label>
       <input type="text" name="CPF" id="CPF">
     </div><br>
-
-    <div>
-      <label>Sexo:</label><br>
-      <label>
-        <input type="radio" name="Devweb" value="frontend" checked="">Masculino
-      </label>
-      <label>
-        <input type="radio" name="devweb" value="beckend">Feminino
-      </label>
-      <label>
-        <input type="radio" name="devweb" value="Fullstack">Prefiro não informar
-      </label>
-    </div><br>
-
-    <div class="campo">
-      <label>Deseja receber nossas novidades?</label>
-      <select id="Novidades">
-        <option selected="" disabled="" value="">Selecione</option>
-        <option>Sim</option>
-        <option>Não</option>
-
-      </select>
-    </div>
-
-    <fieldset class="grupo">
-      <div id="check">
-        <label for="">Serviços desejados: </label> <br><br>
-        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Internet">
-        <label for="tecnologia2">Internet</label>
-        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Telefonia">
-        <label for="tecnologia3">Telefonia</label>
-        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Rede e infraestrutura">
-        <label for="tecnologia4">Rede e infraestrutura</label>
-        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Mobilidade">
-        <label for="tecnologia5">Mobilidade</label>
-
-      </div>
     </fieldset>
     <div>
       <br>
       <label>Conte um pouco o que espera de nossos serviços:</label>
       <textarea row="6" id="experiencia" name="experiencia"></textarea>
     </div><br><br>
-    <a id="botao" href="index.html">Concluído</a>
-
+    <button onclick="saveDataToLocalStorage()">Salvar</button>
   </form>
-
+  
 
 </section>
 </body></html>
