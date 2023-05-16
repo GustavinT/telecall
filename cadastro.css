@@ -1,10 +1,10 @@
 @font-face {
     font-family: roboto;
-<<<<<<< HEAD
+
     src: url(/fontes/Roboto-Regular.ttf);
-=======
+
     src: url(fontes/Roboto-Regular.ttf);
->>>>>>> 06a9a4c2506a3e80be6cec3d42e8c65671163f38
+
 }
 
 html{
@@ -45,8 +45,13 @@ section{
     box-shadow: black 2px 2px 7px 2px;
     border-radius: 20px;
 }
+#EfeitoForm:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
 body{
-    background-color: #CA1C2A;
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(128,0,26,1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
@@ -169,10 +174,9 @@ nav h1, a, button{
     border-radius: 20px;
     
 }
-<<<<<<< HEAD
+
 button{
     background-color: black;
     color: #E0E0F8;
 }
-=======
->>>>>>> 06a9a4c2506a3e80be6cec3d42e8c65671163f38
+
