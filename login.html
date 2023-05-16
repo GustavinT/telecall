@@ -10,18 +10,20 @@
     
 </head>
 <body>
-    <form>
-        <h3>Entrar com seu cadastro<br>Só para clientes</h3>
-        <img src="imagens/android-chrome-192x192-removebg-preview.png" alt="">
+    <form id="EfeitoForm">
+        <h3>Entrar com seu cadastro:<br><br> Só para clientes!</h3>
+        <img src="imagens/favicon_io/telecall_login.png" alt="" id="imgLogin">
         <input type="text" name="email" placeholder="Seu email..." id="login">
         <div class="error" name="errorEmail">Email incorreto</div>
         <div class="error" id="ErrorRecorder">Favor preencher o campo obrigatório</div>
         <input type="password" name="senha" placeholder="Sua senha..." id="senha">
         <div class="error" id="Errorsenha" >Senha incorreta</div>
         <div class="error">Favor preencher o campo obrigatório</div>
-        <input type="submit" onclick="logar(); return false">
+        <input type="submit" onclick="logar(); return false" id="botaoEnviar">
         <a href="cadastro.html">Cadastre-se</a>
     </form>
- 
+    <footer>
+        <h1>Todos os direitos reservados Gustavo Tavares e Matheus Pereira</h1>
+    </footer>
 </body>
 </html>

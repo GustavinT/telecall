@@ -1,6 +1,10 @@
 @font-face {
     font-family: roboto;
+<<<<<<< HEAD
     src: url(/fontes/Roboto-Regular.ttf);
+=======
+    src: url(fontes/Roboto-Regular.ttf);
+>>>>>>> 06a9a4c2506a3e80be6cec3d42e8c65671163f38
 }
 
 html{
@@ -165,7 +169,10 @@ nav h1, a, button{
     border-radius: 20px;
     
 }
+<<<<<<< HEAD
 button{
     background-color: black;
     color: #E0E0F8;
 }
+=======
+>>>>>>> 06a9a4c2506a3e80be6cec3d42e8c65671163f38
