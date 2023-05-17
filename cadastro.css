@@ -45,11 +45,8 @@ section{
     box-shadow: black 2px 2px 7px 2px;
     border-radius: 20px;
 }
-#EfeitoForm:hover{
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    transform: scale(1.1);
-}
+
+
 body{
     background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(128,0,26,1) 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -65,10 +62,17 @@ textarea{
 }
 input, select{
     border-radius: 5px;
-    padding: 2px;
+    padding: 5px;
     margin: 2px;
     width: 500px;
+    border-color: #d9d9db;
+
     
+}
+#crie{
+      
+      margin-top: 20px;
+      font-size: 1.5em;  
 }
 .campo{
     margin-bottom: 1em;
@@ -179,4 +183,10 @@ button{
     background-color: black;
     color: #E0E0F8;
 }
-
+#tecnologia{
+    width: auto;
+    margin-top: 20px;
+}
+#Novidades{
+    margin-bottom: 40px;
+}

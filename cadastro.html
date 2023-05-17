@@ -10,16 +10,6 @@
 </head>
 
 <body>
-  <header class="box_header">
-    <nav>
-        <img id="img_logo" src="imagens/android-chrome-192x192-removebg-preview.png" alt="">
-        <h1 id="marca">Telecall</h1>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Contato</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">FAQ</a>
-        <a href="http://" target="_blank" rel="noopener noreferrer">Trabalhe Conosco</a>
-        <a href="login.html" target="_blank" rel="noopener noreferrer">Sobre nós</a>
-    </nav>
-</header>
   <section id="EfeitoForm">
   <div>
     <h1 id="titulo"></h1>
@@ -38,30 +28,6 @@
         <input type="text" name="sobrenome" id="sobrenome">
       </div>
     </fieldset>
-    <div>
-      <label>E-mail:</label>
-      <input
-      type="text"
-      name="tarefa"
-      placeholder="Insira seu Email"
-      id="tarefa"
-    />
-
-      <input type="email" name="email" id="email" >
-
-    </div>
-    <div>
-      <label>Senha:</label>
-      <input
-      type="password"
-      name="pass"
-      placeholder="Insira sua senha"
-      id="pass"
-    />
-
-      <input type="password" name="senha" id="senha" >
-
-    </div>
     <div>
       <label>Telefone(Com DDD):</label>
       <input type="text" name="telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" />
@@ -83,30 +49,46 @@
         <br><br></label><input id="selec" type="radio" name="devweb" value="beckend">Feminino</input>
         <br><br><input id="selec" type="radio" name="devweb" value="Fullstack">Prefiro não informar</input>
 
-    <div class="campo">
-      <label>Deseja receber nossas novidades?</label>
-      <select id="Novidades">
-        <option selected="" disabled="" value="">Selecione</option>
-        <option>Sim</option>
-        <option>Não</option>
+    
 
       </select>
     </div>
 
     <fieldset class="grupo">
+      <h1 id="tecnologia">Serviço interessado?</h1>
       <div id="check">
-        <label for="">Serviços desejados: </label> <br><br>
-        <input type="checkbox" id="tecnologia1" name="tecnologia1" value="Internet">
-        <label for="tecnologia2">Internet</label>
-        <input type="checkbox" id="tecnologia2" name="tecnologia2" value="Telefonia">
-        <label for="tecnologia3">Telefonia</label>
-        <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Rede e infraestrutura">
-        <label for="tecnologia4">Rede e infraestrutura</label>
-        <input type="checkbox" id="tecnologia4" name="tecnologia4" value="Mobilidade">
-        <label for="tecnologia5">Mobilidade</label>
-
+        <input type="checkbox" id="tecnologia" name="tecnologia1" value="Internet">Internet</input>
+       <br>
+        <input type="checkbox" id="tecnologia" name="tecnologia2" value="Telefonia">Internet</input>
+        <br>
+        <input type="checkbox" id="tecnologia" name="tecnologia3" value="Rede e infraestrutura">Internet</input>
+        <br>
+        <input type="checkbox" id="tecnologia" name="tecnologia4" value="Mobilidade">Internet</input>
+        <div for="tecnologia5" id="crie">CRIE EMAIL E SENHA PARA LOGIN:</div>
       </div>
-
+<br>
+      <div>
+        <label>E-mail:</label>
+        <input
+        type="text"
+        placeholder="Insira seu Email"
+        id="v"
+      />
+      </div>
+      <div>
+        <label>Senha:</label>
+        <input
+        type="password"
+        placeholder="Insira sua senha"
+        id="s"
+      />
+      <div>
+        <label>Confirma a senha:</label>
+        <input
+        type="password"
+        placeholder="Confirma a senha"
+        id="s"
+      />
     </fieldset>
     <div>
       <br>
@@ -114,9 +96,15 @@
       <textarea row="6" id="experiencia" name="experiencia"></textarea>
     </div><br><br>
 
-    <button onclick="saveDataToLocalStorage()">Salvar</button>
+    <div class="campo">
+      <h1>Deseja receber nossas novidades?</h1>
+      <select id="Novidades">
+        <option selected="" disabled="" value="">Selecione</option>
+        <option>Sim</option>
+        <option>Não</option>
+      </select>  
 
-    <input type="submit" onclick="cadastrar(); return false">
+    <input type="submit" onclick="addItem() ; return false">
     <a href="cadastro.html">Cadastre-se</a>
   </form>
   

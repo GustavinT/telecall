@@ -1,11 +1,26 @@
-function saveDataToLocalStorage() {
-    const tarefa = document.querySelector("#tarefa").value;
-    const pass = document.querySelector("#pass").value;
+var arr = [];
+var sen = [];
+var contar = 0;
 
 
-
-    localStorage.setItem("email", tarefa);
-    console.log(tarefa);
-    localStorage.setItem("senha", pass);
-    console.log(pass);
+function addItem(){
+  if (localStorage.Cadastro){             
+     arr = localStorage.getItem('Cadastro'),location.href = 'login.html'; 
   }
+  
+
+  let novoItem = document.getElementById("v").value;
+  arr.push(novoItem);
+  document.getElementById("v").value = "";
+  localStorage.Cadastro = arr;
+
+ 
+  if (localStorage.Senha){             
+    sen = localStorage.getItem('Senha'); 
+ }
+  let novaSenha = document.getElementById("s").value;
+  sen.push(novaSenha);
+  document.getElementById("s").value = "";
+  localStorage.Senha = sen;
+
+}
