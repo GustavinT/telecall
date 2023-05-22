@@ -18,7 +18,6 @@
     <br>
   </div>
   <form>
-    <fieldset>
       <div>
         <label for="">Nome:</label>
         <input type="text" name="nome" id="nome">
@@ -27,7 +26,6 @@
         <label for="">Sobrenome:</label>
         <input type="text" name="sobrenome" id="sobrenome">
       </div>
-    </fieldset>
     <div>
       <label>Telefone(Com DDD):</label>
       <input type="text" name="telefone" data-mask="(00) 0000-0000" data-mask-selectonfocus="true" />
@@ -45,7 +43,7 @@
       <input type="text" name="CPF" id="CPF">
     </div><br>
   Sexo:<br><br>
-        <input id="selec"  type="radio" name="Devweb" value="frontend" checked="">Masculino</input>
+        <input id="selec"  type="radio" name="devweb" value="frontend" checked="">Masculino</input>
         <br><br></label><input id="selec" type="radio" name="devweb" value="beckend">Feminino</input>
         <br><br><input id="selec" type="radio" name="devweb" value="Fullstack">Prefiro não informar</input>
 
@@ -53,17 +51,15 @@
 
       </select>
     </div>
-
-    <fieldset class="grupo">
       <h1 id="tecnologia">Serviço interessado?</h1>
       <div id="check">
-        <input type="checkbox" id="tecnologia" name="tecnologia1" value="Internet">Internet</input>
+        <input type="radio" id="tecnologia" name="tecnologia" value="Internet">Internet movel</input>
        <br>
-        <input type="checkbox" id="tecnologia" name="tecnologia2" value="Telefonia">Internet</input>
+        <input type="radio" id="tecnologia" name="tecnologia" value="Telefonia">Internet Residencial</input>
         <br>
-        <input type="checkbox" id="tecnologia" name="tecnologia3" value="Rede e infraestrutura">Internet</input>
+        <input type="radio" id="tecnologia" name="tecnologia" value="Rede e infraestrutura">Plano Tellecal combo</input>
         <br>
-        <input type="checkbox" id="tecnologia" name="tecnologia4" value="Mobilidade">Internet</input>
+        <input type="radio" id="tecnologia" name="tecnologia" value="Mobilidade">Outros</input>
         <div for="tecnologia5" id="crie">CRIE EMAIL E SENHA PARA LOGIN:</div>
       </div>
 <br>
@@ -72,7 +68,7 @@
         <input
         type="text"
         placeholder="Insira seu Email"
-        id="v"
+        id="v" required
       />
       </div>
       <div>
@@ -80,16 +76,14 @@
         <input
         type="password"
         placeholder="Insira sua senha"
-        id="s"
+        id="s" required
       />
       <div>
         <label>Confirma a senha:</label>
         <input
         type="password"
         placeholder="Confirma a senha"
-        id="s"
-      />
-    </fieldset>
+        id="s" required/>
     <div>
       <br>
       <label>Conte um pouco o que espera de nossos serviços:</label>
@@ -103,11 +97,12 @@
         <option>Sim</option>
         <option>Não</option>
       </select>  
-
-    <input type="submit" onclick="addItem() ; return false">
-    <a href="cadastro.html">Cadastre-se</a>
+    <input id="enviar" type="Submit" value="Salvar" onclick="save()">
+    <h4 id="save">Salvo com sucesso!</h4>
+    <input id="enviar" type="submit" onclick="addItem() ; return false">
   </form>
-  
-
 </section>
+<footer>
+  <p>Todos os direitos reservados Gustavo Tavares e Matheus Pereira</p>
+</footer>
 </body></html>

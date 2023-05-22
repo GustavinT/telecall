@@ -24,3 +24,8 @@ function addItem(){
   localStorage.Senha = sen;
 
 }
+function save(){
+    document.getElementById("save").style.display = "inline"
+
+
+}
