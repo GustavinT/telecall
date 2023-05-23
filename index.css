@@ -50,6 +50,10 @@ body{
 .logo span{
     color: var(--red);
 }
+.nav-item{
+  
+
+}
 .navigation ul{
     display: flex;
     align-items: center;
@@ -385,6 +389,15 @@ div.wrapper{
 #sobre-nos{
   background-image: url(/imagens/fundo2.png);
 }
+#mobilidade{
+  background-image: url(/imagens/fundo3.png);
+}
+#internet{
+  background-image: url(/imagens/fundo4.png);
+}
+#telefonia{
+  background-image: url(/imagens/fundo5.png);
+}
 footer{
   background-color: aliceblue;
   font-size: 1.5em;
@@ -404,4 +417,12 @@ footer{
   color: black;
   text-align: center;
   font-size: 1.5em;
+}
+#planovendas{
+  text-align: center;
+  border: 2px solid red;
+  background-color: #1e1c2a;
+  width: 450px;
+  
+ 
 }
